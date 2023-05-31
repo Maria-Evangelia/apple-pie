@@ -1,0 +1,123 @@
+/* CSS RESET - do not remove */
+/* Reset default browser styles and provide a consistent starting point */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+
+/*  Set the font */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* STYLES */
+/* Write your CSS below */
+.image img{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+
+.text {
+  font-size: 5rem;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+
+.schön{ box-sizing: border-box;
+margin-left: 8%;
+margin-right: 8%;
+margin-top: 8%;
+font-size: 1.9rem;
+font-weight: lighter; 
+opacity: 0.8;
+text-align: center;
+}
+
+.recipe img{
+width: 40%;
+margin-top: 4%;
+margin-bottom: 4%;
+}
+
+.cooking-info img { 
+  width: 40%;
+margin-top: 4%;
+margin-bottom: 4%;
+}
+
+
+.ingredients {
+  line-height: 1.3em;
+  border-top: 2px solid black;
+  padding-top: 5%;
+  font-size: 1.8rem;
+  margin-left: 11%;
+  margin-bottom: 2%;
+  margin-right: 11%;
+}
+
+.unit{
+  opacity: 0.7;
+  font-size: 1.6rem;
+  list-style: none;
+  margin-left: 150px;
+}
+
+.unit li::before {
+  content: "-";
+}
+
+.directions {
+  
+  border-top: 2px solid black;
+ padding-top: 5%;
+ font-size: 1.8rem;
+ margin-left: 11%;
+margin-bottom: 2%;
+margin-right: 11%;
+
+}
+
+.status{
+  line-height: 1.3em;
+  opacity: 0.7;
+  font-size: 1.6rem;
+  margin-left: 150px;
+ counter-reset: numbering;
+ list-style-type: none;
+ margin-right: 9%;
+ margin-bottom: 10%;
+}
+
+.status li::before {
+content: counter(numbering) ")";
+counter-increment: numbering;
+}
